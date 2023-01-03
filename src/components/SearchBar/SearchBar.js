@@ -7,7 +7,6 @@ import {
 } from "@mui/icons-material";
 import { styled } from "@mui/material/styles";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
-import Typography from "@mui/material/Typography";
 import "./SearchBar.css";
 
 const SearchBar = () => {
