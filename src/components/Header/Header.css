@@ -1,0 +1,24 @@
+#header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.welcome {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.welcome p {
+  margin: 0;
+  text-align: left;
+  font-weight: 500;
+}
