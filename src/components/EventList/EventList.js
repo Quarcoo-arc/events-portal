@@ -4,11 +4,11 @@ import Event from "../Event/Event";
 import "./EventList.css";
 
 const EventList = () => {
-  const [data, setData] = useState(events);
+  const [data] = useState(events);
   return (
     <div id="eventlist">
       {data.map((event) => (
-        <Event event={event} />
+        <Event key={event.id} event={event} />
       ))}
     </div>
   );

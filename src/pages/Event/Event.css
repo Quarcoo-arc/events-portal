@@ -1,0 +1,78 @@
+#eventPage {
+  margin: 1rem 0;
+}
+
+.backIconWrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(250, 250, 250, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.eventImgWrapper {
+  width: 30rem;
+  height: 20rem;
+  margin: 1rem auto;
+}
+
+.eventImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.textWrapper {
+  margin: 2rem 0 6rem;
+  margin-left: 1rem;
+}
+
+.textWrapper span {
+  font-weight: 600;
+  display: block;
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
+
+.timeInfo {
+  margin-top: 2rem;
+}
+
+.eventDetail {
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.eventDetail p {
+  margin: 0;
+  margin-left: 0.2rem;
+}
+
+.hashTags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 5rem;
+}
+
+.hashTag {
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 4px 16px;
+  color: #f3f3f3;
+  margin-right: 0.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 680px) {
+  .eventImgWrapper {
+    width: 19rem;
+    height: 20rem;
+  }
+}

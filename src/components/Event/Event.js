@@ -8,11 +8,12 @@ import {
 } from "@mui/icons-material";
 import CustomToolTip from "../CustomToolTip/CustomToolTip";
 import "./Event.css";
+import { Link } from "react-router-dom";
 
 const Event = ({ event }) => {
   return (
     <div id="event">
-      <a href="/#">
+      <Link to={`/event/${event.id}`}>
         <div className="card">
           <img src={event.image} alt={event.location} />
           <CustomToolTip
@@ -49,7 +50,7 @@ const Event = ({ event }) => {
             <div className="type">{event.type}</div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
