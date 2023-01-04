@@ -19,7 +19,6 @@ const EventTypes = () => {
     } else {
       setSelected((prev) => ({ ...prev, [clickedItem]: true }));
     }
-    console.log(selected, clickedItem);
   };
 
   return (
