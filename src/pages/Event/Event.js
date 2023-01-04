@@ -60,7 +60,7 @@ const Event = () => {
           <CalendarMonth />
           <div>
             <p>{date}</p>
-            <p>Starts at: {startTime}</p>
+            <p className="startTime">Starts at: {startTime}</p>
           </div>
         </div>
         <div className="eventDetail">

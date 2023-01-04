@@ -61,3 +61,8 @@
 .blue {
   background-color: #004ce8;
 }
+
+.selectedType {
+  background-color: #212121b2;
+  color: white;
+}
