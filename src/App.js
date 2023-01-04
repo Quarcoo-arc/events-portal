@@ -1,15 +1,23 @@
 import "./App.css";
-import { Navbar, Header, SearchBar, EventTypes, EventList } from "./components";
+import { Home, Event } from "./pages";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/event",
+      element: <Event />,
+    },
+  ]);
+
   return (
-    <div className="App">
-      <Navbar selected="home" />
-      <Header username="John" />
-      <SearchBar />
-      <EventTypes />
-      <EventList />
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
