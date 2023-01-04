@@ -37,6 +37,14 @@ input[type="text"]:focus-visible {
   display: flex;
   align-items: center;
   background-color: unset;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.tooltipBtn p {
+  margin: 0;
+  margin-left: 0.3rem;
+  font-weight: 700;
 }
 
 .tooltipBtn:hover {

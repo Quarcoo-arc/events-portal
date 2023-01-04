@@ -28,10 +28,12 @@ const SearchBar = () => {
         title={
           <>
             <button className="tooltipBtn">
-              <CalendarMonthOutlined /> Date
+              <CalendarMonthOutlined />
+              <p>Date</p>
             </button>
             <button className="tooltipBtn">
-              <PinDropOutlined /> Location
+              <PinDropOutlined />
+              <p>Location</p>
             </button>
           </>
         }

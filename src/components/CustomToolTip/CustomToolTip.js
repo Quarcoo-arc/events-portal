@@ -8,9 +8,12 @@ const CustomToolTip = styled(({ className, ...props }) => (
   [`& .${tooltipClasses.tooltip}`]: {
     backgroundColor: "#f5f5f9",
     color: "rgba(0, 0, 0, 0.87)",
-    maxWidth: 220,
+    width: 200,
+    maxWidth: 500,
     fontSize: theme.typography.pxToRem(12),
     border: "1px solid #dadde9",
+    borderRadius: "1rem",
+    padding: "1.5rem 0.5rem 1rem",
   },
 }));
 
