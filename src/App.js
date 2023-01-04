@@ -1,5 +1,5 @@
 import "./App.css";
-import { Home, Event } from "./pages";
+import { Home, Event, Error } from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
@@ -7,10 +7,12 @@ function App() {
     {
       path: "/",
       element: <Home />,
+      errorElement: <Error />,
     },
     {
-      path: "/event",
+      path: "/event/:eventId",
       element: <Event />,
+      errorElement: <Error />,
     },
   ]);
 
