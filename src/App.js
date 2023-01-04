@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Header, SearchBar, EventTypes, Event } from "./components";
+import { Navbar, Header, SearchBar, EventTypes, EventList } from "./components";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Header username="John" />
       <SearchBar />
       <EventTypes />
-      <Event />
+      <EventList />
     </div>
   );
 }

@@ -8,6 +8,7 @@
   justify-content: space-evenly;
   padding: 0.4rem 0;
   color: black;
+  z-index: 1;
 }
 
 #navbar > a {

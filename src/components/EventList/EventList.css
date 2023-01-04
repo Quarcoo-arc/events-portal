@@ -1,0 +1,7 @@
+#eventlist {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem 0 4rem;
+}
