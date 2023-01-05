@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { ReactComponent as SearchIcon } from "../../assets/svg/SearchIcon.svg";
 import {
   TuneOutlined,
@@ -7,18 +7,24 @@ import {
 } from "@mui/icons-material";
 import CustomToolTip from "../CustomToolTip/CustomToolTip";
 import "./SearchBar.css";
+import EventsContext from "../../contexts/EventsContext";
 
 const SearchBar = () => {
-  const search = (e) => {
-    e.preventDefault();
+  const { searchTerm, setSearchTerm, filterEvents } = useContext(EventsContext);
+
+  const onChangeHandler = (e) => {
+    setSearchTerm(e.target.value);
+    filterEvents();
   };
 
   return (
-    <form id="searchBar" onSubmit={search}>
+    <form id="searchBar" onSubmit={filterEvents}>
       <input
         type="text"
         name="searchTerm"
         id="searchTerm"
+        value={searchTerm}
+        onChange={onChangeHandler}
         placeholder="Search event..."
       />
       <label htmlFor="searchTerm" className="searchIcon">

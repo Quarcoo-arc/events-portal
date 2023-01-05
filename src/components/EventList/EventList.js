@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import events from "../../data";
+import React, { useContext } from "react";
+import EventsContext from "../../contexts/EventsContext";
 import Event from "../Event/Event";
 import "./EventList.css";
 
 const EventList = () => {
-  const [data] = useState(events);
+  const { data } = useContext(EventsContext);
   return (
     <div id="eventlist">
       {data.map((event) => (
