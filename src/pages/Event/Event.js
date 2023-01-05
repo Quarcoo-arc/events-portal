@@ -67,7 +67,7 @@ const Event = () => {
           <PinDropOutlined /> <p>{location}</p>
         </div>
         <div className="eventDetail">
-          <WatchLaterOutlined /> <p>{duration} Minutes</p>
+          <WatchLaterOutlined /> <p>Duration: {duration} Minutes</p>
         </div>
         <div className="eventDetail">
           <Download /> <p>Resouce</p>
