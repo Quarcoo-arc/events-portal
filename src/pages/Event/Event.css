@@ -27,8 +27,7 @@
 }
 
 .textWrapper {
-  margin: 2rem 0 6rem;
-  margin-left: 1rem;
+  margin: 2rem 1rem 6rem;
 }
 
 .textWrapper span {
@@ -62,7 +61,7 @@
 .hashTags {
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 0 5rem;
+  margin: 2rem 0 2rem;
 }
 
 .hashTag {
@@ -74,6 +73,31 @@
   margin-bottom: 0.8rem;
   font-weight: 500;
   font-size: 0.8rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 5rem;
+}
+
+.buttons button {
+  border: 0.1rem solid white;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  width: 8rem;
+  color: #f3f3f3;
+  margin-right: 0.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  background-color: unset;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  border-color: #fdb305;
+  color: #fdb305;
 }
 
 @media screen and (max-width: 680px) {

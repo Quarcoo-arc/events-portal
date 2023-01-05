@@ -79,6 +79,10 @@ const Event = () => {
             </div>
           ))}
         </div>
+        <div className="buttons">
+          <button>Support</button>
+          <button>Join</button>
+        </div>
       </div>
       <Navbar selected="home" />
     </div>
